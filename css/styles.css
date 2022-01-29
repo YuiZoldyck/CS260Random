@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgb(0,0,0);
+    background-color: rgb(255,255,255);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+div.box {
+    background-color: #ffffff;
+    /* border: 1px solid black; */
+    opacity: 0.6;
+}
+
+div.box h1{
+    font-weight: bold;
+    color: #000000;
+}
+
+h1 {
+    color: rgb(0,0,0);
+    font-size: 60px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 14px 16px;
+    text-align:  center;
+    color: rgb(0,0,0);
+}
+
+p {
+    color: rgb(0,0,0);
+    font-size: 12 px;
+    margin: 2%;
+    padding: 5%;
+}
+
+ul {
+    list-style-type: none;
+    padding: 1vw;
+    overflow: hidden;
+    text-align: center;
+}
+
+.active {
+    background-color: rgba(104, 99, 99, 0.507);
+}
+
+.button {
+    margin: 5% 42% 5% 42%;
+    background-color: #c9bda4;
+    border: 1px solid black;
+    opacity: 0.8;
+    padding: 3% 7% 4% 6%;
+    font-size: 35px;
+}
+
+.button:hover{
+    background-color: #918773;
+}
+
+.center {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 90%;
+    float: none;
+}
+
+.cent {
+    text-align: center;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 20%;
+    float: none;
+}
+
+.footer {
+    /* margin-left: 1% ; */
+    height: 3%;
+    font-size: 14px;
+    color: rgb(30, 26,44);
+    text-align: left;
+}
+
+.header {
+    /* top: 2%; */
+    left: 2%;
+    right: 2%;
+    height: 10%;
+    background-color: rgba(104, 99, 99, 0.932);
+}
+
+.mainbody {
+    height: 100%;
+    top: 114px;
+    bottom: 64px;
+    left: 114px;
+    right: 114px;
+}
+
+.menu {
+    height: 5%;
+    margin: 2%;
+}
+
+.section { 
+    padding-top: 10%;
+    height: 90vh;
+    display: block;
+    
+    
+}
+
+.cater{
+    border: 1px solid rgb(0,0,0);
+    background: url(../images/bao.jpg);
+    opacity: 0.6;
+    background-size: auto;
+    color: rgb(0,0,0);
+    margin-bottom: 2%;
+    
+}
+
+.homemade{
+    border: 1px solid rgb(0,0,0);
+    background: url(../images/foccacia.jpg);
+    opacity: 0.6;
+    background-size: auto;
+    margin-bottom: 2%;
+}
+
+.order{
+    border: 1px solid rgb(0,0,0);
+    background: url(../images/pinapplecake.jpg);
+    opacity: 0.6;
+    background-size: auto;
+    margin-bottom: 2%;
+}
