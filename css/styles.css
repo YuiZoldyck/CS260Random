@@ -35,16 +35,11 @@ div.gallery {
     margin: 5px;
     border: 1px solid #ccc;
     float: left;
-    width: 18%;
+    width: 95%;
 }
   
 div.gallery:hover {
 border: 1px solid #777;
-}
-
-div.gallery img {
-width: auto;
-height: auto;
 }
 
 div.desc {
@@ -53,9 +48,28 @@ text-align: center;
 }
 
 div.gallery img {
+    position: absolute;
+    max-width: 100%;
     width: 100%;
     height: auto;
+    top: 50%;     
+    left: 50%;
+    transform: translate( -50%, -50%);
+    
 }
+
+div.gallery img.landscape{
+    height: 100%;
+    width: auto;
+}
+
+.square {
+    position: relative;
+    width: 300px;     
+    height: 300px;
+    overflow: hidden;
+}
+
 
 h1 {
     color: rgb(0,0,0);
@@ -66,6 +80,40 @@ h1 {
 
 li {
     float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+  
+.dropdown-content a:hover {background-color: #f1f1f1;}
+  
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 li a {
@@ -84,7 +132,7 @@ p {
 
 ul {
     list-style-type: none;
-    padding: 1vw;
+    padding: 0;
     overflow: hidden;
     text-align: center;
 }
@@ -104,8 +152,8 @@ ul {
     background-color: #c9bda4;
     border: 1px solid black;
     opacity: 0.8;
-    padding: 3% 7% 4% 6%;
-    font-size: 35px;
+    padding: 4%;
+    font-size: 3vw;
 }
 
 .button:hover{
@@ -136,7 +184,7 @@ ul {
     padding: 10px;
     height: 300px; /* Should be removed. Only for demonstration */
 }
-  
+
 .row:after {
     content: "";
     display: table;
@@ -215,13 +263,39 @@ ul {
 }
 
 .section { 
-    padding-top: 10%;
-    height: 93vh;
-    display: block;
+    position: sticky;
+    padding: 2em;
+    left: 50%;
+    top: 50%;
+    height: 100%;
 }
 
 .section1 {
     border:hidden;
+}
+.responsive {
+    padding: 0 6px;
+    float: left;
+    width: 24.99999%;
+}
+  
+@media only screen and (max-width: 700px) {
+    .responsive {
+      width: 49.99999%;
+      margin: 6px 0;
+    }
+}
+  
+@media only screen and (max-width: 500px) {
+    .responsive {
+      width: 100%;
+    }
+}
+  
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
 }
 
 .cater{
@@ -230,6 +304,7 @@ ul {
     background-size: auto;
     color: rgb(0,0,0);
     margin-bottom: 2%;
+    background-repeat: no-repeat;
     
 }
 
@@ -238,6 +313,7 @@ ul {
     background: url(../images/foccacia.jpg);
     background-size: auto;
     margin-bottom: 2%;
+    background-repeat: no-repeat;
 }
 
 .order{
@@ -245,4 +321,32 @@ ul {
     background: url(../images/pinapplecake.jpg);
     background-size: auto;
     margin-bottom: 2%;
+    background-repeat: no-repeat;
+}
+
+.taiwanese{
+    border: 1px solid rgb(0,0,0);
+    background: url(../images/korofan.jpg);
+    background-size: auto;
+    color: rgb(0,0,0);
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
+}
+
+.baked{
+    border: 1px solid rgb(0,0,0);
+    background: url(../images/bagel.jpg);
+    background-size: auto;
+    color: rgb(0,0,0);
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
+}
+
+.dessert{
+    border: 1px solid rgb(0,0,0);
+    background: url(../images/waffle.jpg);
+    background-size: auto;
+    color: rgb(0,0,0);
+    margin-bottom: 2%;
+    background-repeat: no-repeat;
 }
