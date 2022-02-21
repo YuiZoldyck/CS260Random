@@ -3,6 +3,7 @@
     <head>
         <title>Contact Me</title>
         <link rel="stylesheet" href="../css/styles.css"/>
+        <script src="../main.js"></script>
     </head>
 
     <body>
@@ -10,16 +11,15 @@
             <div class = "menu">
                 <ul>
                     <li><a href="../index.html">Sylvia at Home</a></li>
-                    <li class="dropdown">
-                        <a class="dropbtn" href="menu.html">Menu</a>
-                        <div class="dropdown-content">
-                            <a href="taiwanese.html">Taiwanese Dishes</a>
-                            <a href="bakedgoods.html">Baked Goods</a>
-                            <a href="dessert.html">Dessert</a>
-                        </div>
-                    </li>
+                    <li><a href="menu.html">Menu</a></li>
                     <li><a href="order.html">Order</a></li>
                     <li><a class="active" href="#">Contact</a></li>
+                    <li class="dropdown weather"> Weather Right Now
+                        <a class="dropdown-content"> 
+                            <section id="weatherResults">
+                            </section>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
