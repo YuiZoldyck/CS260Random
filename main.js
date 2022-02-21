@@ -105,7 +105,7 @@ function updateCartTotal() {
 }
 
 
-const url = "http://api.openweathermap.org/data/2.5/weather?q=" + "Bangkok" + "&units=metric" + "&APPID=d3068e3e914bcf6b7ac1d4454bb8f605";
+const url = "https://api.openweathermap.org/data/2.5/weather?q=" + "Bangkok" + "&units=metric" + "&APPID=d3068e3e914bcf6b7ac1d4454bb8f605";
 fetch(url)
     .then(function(response) {
     return response.json();
